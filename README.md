@@ -7,11 +7,44 @@ To write a program to find the LU Decomposition of a matrix.
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
-## Algorithm
-1. Define the package as scipy.linalg import lu.
-2. Get input from user and print L and U matrix by 'print' .
-3. Define a package as "from scipy.linalg import lu_factor, lu_solve" and create the variable as 'X' include the package in that variable
-4. Print the variable 'X'
+## Algorithm 
+### (i) To Find the L and U Matrices
+
+1. *Start*
+
+2. *Import the necessary library*: numpy as np.
+
+3. *Prompt the user to enter a square matrix A*.
+
+4. *Convert the user input into a NumPy array*.
+
+5. *Check if the matrix is invertible* by verifying that its determinant is not zero using np.linalg.det(A).
+
+6. *If the matrix is invertible*, compute the inverse using np.linalg.inv(A) and store the result.
+
+7. *Display the inverse matrix*.
+
+8. *If the determinant is zero*, display a message stating that the matrix is not invertible.
+
+9. *End the program*.
+
+### (ii) To Find the LU Decomposition and Solve a System
+
+1. *Start*
+
+2. *Import the necessary library*: numpy as np.
+
+3. *Prompt the user to enter a square matrix A.*
+
+4. *Convert the input into a NumPy array.*
+
+5. **Use np.linalg.det(A) to compute the determinant of the matrix A and store the result in det.**
+
+6. **Display the value of the determinant det.**
+
+7. *End the program.*
+
+
 ## Program:
 (i) To find the L and U matrix
 ```
